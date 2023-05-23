@@ -11,8 +11,7 @@ There is nothing magical about this package other than I regulary start doing da
 
 This requires extracting the Julia package information since the code I implement makes heavy use of other Julia packages. This is easy because which is stored in the Pluto.jl notebook stores this information as Julia strings. 
 
-!!! note
-    !!! You can of course do all this manually by adding the packages and copying the code, but that is very cumbersome !!!
+**Note** You can of course do all this manually by adding the packages and copying the code, but that is very cumbersome!
 
 
 ## Usage
@@ -45,10 +44,10 @@ optional arguments:
 ## Output
 The command outputs a structure such that:
 
-[Notebook-Name-Folder]
+`Notebook-Name-Folder`
     - Project.toml
     - Manifest.toml
-    - [Notebook-Name].jl
+    - `Notebook-Name`.jl
 
 ## Commentary 
 The functionality here is straightfoward so a more useful approach would be to add an "export" option to the Pluto.jl frontend banner that would this for you. Since I have no experience with `javascript` its pretty challenging for me to do so there would need to be buy-in from the Pluto devs to implement. I assume there should be a  way with `javascript` to create a tarball or zip folder of the Notebook, Project.toml, and Manifest.toml files.
